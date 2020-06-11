@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+/* * {
+  box-sizing: border-box;
+  padding: 25px;
+} */
+
+/* * {
+color: white;
+} */
+
+/* Nav Bar */
+.navbar {
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  top: 0;
+  list-style-type: none;
+  width: 100%;
+  /* margin: 0;
+  padding: 0; */
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.nav li {
+  float: left;
+}
+
+.nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  background-color: rgba(0, 0, 0, 0);
+  position: relative;
+  display: inline-block;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 1);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: rgba(160, 24, 194, 1) ; color: #ffffff;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover {
+  background-color: rgba#b139a1;
+}
+
+.box {
+  background-color: black;
+}
+
+body {
+  /* background-image: url('background-test.jpg'); */
+  background-image: linear-gradient( #0f2027, #203A43, #2C5364);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: sans-serif;
+  font-size: 14px;
+  font-weight: 100;
+  color: white;
+}
+
+#prof-pic-box {
+  margin-top: 70px;
+}
+#profile-pic {
+  padding: 0px;
+  margin: 20px;
+  background-color: #2C5364;
+  border-radius: 50%;
+  float: left;
+}
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 60px;
+  color: white;
+}
+
+h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  color: white;
+  margin-top: 70px;
+}
+
+.cn-btn {
+  color: #ffffff;
+  text-align: center;
+  background-color: rgba#b139a1;
+  border-radius: 5%;
+}
+
+/* button div */
+#buttons {
+  padding-top: 50px;
+  text-align: center;
+}
+
+/* start css for buttons */
+.btn {
+  border-radius: 5px;
+  padding: 15px 25px;
+  font-size: 22px;
+  text-decoration: none;
+  margin: 20px;
+  color: #fff;
+  position: relative;
+  display: inline-block;
+}
+
+.btn:active {
+  transform: translate(0px, 5px);
+  -webkit-transform: translate(0px, 5px);
+  box-shadow: 0px 1px 0px 0px;
+}
+
+.purple {
+  background-color: #9b59b6;
+  box-shadow: 0px 5px 0px 0px #82409D;
+}
+
+.purple:hover {
+  background-color: #B573D0;
+}
+
+#status-box {
+  font-size: 14px;
+  color: #ffffff;
+  padding-top: 50px;
+  /* background-color: white;
+  width: 300px;
+  padding: 20px;
+  border-radius: 5%;
+  position: relative;
+  color: black;
+  font-size: 16px;
+  font-family: "Playfair Display", "cursive"; */
+}
+
+#status-text {
+  font-family: 'Playfair Display', cursive;
+  font-size: 20px;
+  color: #9b59b6;
+}
+
+.status-list {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14 px;
+  color: #9b59b6;
+}
