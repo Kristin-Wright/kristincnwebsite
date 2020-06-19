@@ -1,19 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
-/* * {
+* {
   box-sizing: border-box;
-  padding: 25px;
-} */
-
-/* * {
-color: white;
-} */
+  /* padding: 25px; */
+}
 
 /* Nav Bar */
 .navbar {
   display: flex;
-  flex-direction: row;
   position: fixed;
   top: 0;
   list-style-type: none;
@@ -27,7 +22,7 @@ color: white;
   float: left;
 }
 
-.nav li a {
+.nav li a:link, a:visited {
   display: block;
   color: white;
   text-align: center;
@@ -37,7 +32,7 @@ color: white;
 }
 
 /* Change the link color to #111 (black) on hover */
-li a:hover {
+nav li a:hover {
   background-color: #111;
 }
 
@@ -47,8 +42,9 @@ li a:hover {
   position: relative;
   display: inline-block;
   color: white;
-  padding: 16px;
+  padding: 24px;
   font-size: 16px;
+  text-decoration: none;
   border: none;
   cursor: pointer;
 }
@@ -101,7 +97,6 @@ body {
 }
 
 /* Homepage */
-
 #prof-pic-box {
   margin-top: 70px;
 }
@@ -119,18 +114,11 @@ h1 {
   color: white;
 }
 
-
 .cn-btn {
   color: #ffffff;
   text-align: center;
   background-color: rgba#b139a1;
   border-radius: 5%;
-}
-
-/* button div */
-#buttons {
-  padding-top: 50px;
-  text-align: center;
 }
 
 /* start css for buttons */
@@ -187,7 +175,6 @@ h1 {
 }
 
 /* Codenation Coursework Unit Pages */
-
 h2 {
   margin-top: 80px;
   font-family: 'Playfair Display', serif;
@@ -195,43 +182,8 @@ h2 {
   text-align: left;
   color: white;
 }
-/* Accordion Menu */
-
-.accordion-box {
-  margin: 80px;
-}
-
- /* Style the buttons that are used to open and close the accordion panel */
- .accordion {
-  background-color: #2C5364;
-  color: white;
-  cursor: pointer;
-  padding: 18px;
-  width: 50%;
-  text-align: left;
-  font-family: 'Playfair Display', 'serif';
-  font-size: 16px;
-  font-weight: 800;
-  border: none;
-  border-radius: 5px;
-  outline: none;
-  transition: 0.4s;
-}
-
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active, .accordion:hover {
-  background-color: #558ca3;
-}
-
-/* Style the accordion panel. Note: hidden by default */
-.panel {
-  padding: 0 18px;
-  background-color: rgba(0, 0, 0, 0.3);
-  display: none;
-  overflow: hidden;
-} 
-
-.question {
+ 
+.question, .question a:link, .question a:visited {
   color: white;
   font-family: 'Playfair Display', 'serif';
   font-size: 16px;
@@ -245,6 +197,16 @@ h2 {
   font-size: 14px;
   font-weight: 100;
   line-height: 1.4;
+}
+
+.img caption{
+  font-size: 8px;
+  font-weight: 400;
+}
+
+/* Footer Styling */
+.footer {
+  margin-top: 60px;
 }
 
 .ref-link {

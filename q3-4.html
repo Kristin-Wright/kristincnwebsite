@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kristin's Website - Unit 1 | 3.4</title>/title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <script src="script.js"></script> 
+</head>
+<body>
+    
+<!-- Nav Bar -->    
+<div class="navbar">
+    <div><a href="index.html"><img id="logo" src="kw-logo.png" alt="Logo" width="60px" height="60px"></a></div>
+    <div>
+        <div class="dropdown">
+            Codenation Coursework
+            <div class="dropdown-content">
+                <div class="nav li"><a href="unit1.html">Unit 1</a></div>
+                <div class="nav li"><a href="unit2.html">Unit 2</a></div>
+            </div>
+        </div>
+        <div class="dropdown"><a href="aboutme.html">About Me</a></div>
+        <div class="dropdown"><a href="contact.html">Contact</a></div>
+    </div>   
+</div> 
+
+<!--Question-->
+    <div>
+        <ul>
+            <div><h2>Unit 1, Outcome 3</h2></div>
+            <div class="question">3.4 Describe how you would go about testing digital solutions.
+            </div>
+
+            <div>
+
+            <p class="answer">There are two current industry-standard methodologies I could follow to test digital solutions - Test Driven Design (TDD) and Behaviour Driven Design (BDD - as well as any of their various extensions, such as Acceptance Test Driven Design (ATDD) and Continuous Test Driven Design (CTDD).[1]</p>
+
+            <p class="answer">TDD [2] focuses on how a digital solution functions from a developer, or a team of developers’, point of view - the driving question behind this approach is “Is this code correct?”. Developers, usually the author themselves, use unit tests before production to get an idea of how their code is performing at a granular level, so that they can then revisit it repeatedly to write the cleanest code possible.</p>
+
+            <p class="answer">Unit tests are defined in <a href="https://smartbear.com/learn/automated-testing/what-is-unit-testing/">this article</a> [3] as “the smallest piece of code that can be logically isolated in a system” such as individual functions, methods or classes - as long as it’s not dependent on a database or crosses systems as this would take too long to test.</p>
+
+            <p class="answer">Code is written to pass a specific test, then added to the production code.
+            </p>
+
+            <p class="answer">Behavioural Driven Development is a complementary methodology to an agile process - this focuses more on testing a certain feature from a user’s point of view, or ‘outside-in’. [4, 5] The question asked with BDD is: “Is this what we should be testing?“ Tests, or scenarios or user stories, are designed in a “Given-When-Then” format (eg. “Given the user’s bank account is in credit, and they made no withdrawals recently, When they attempt to withdraw an amount less than their card's limit, Then the withdrawal should complete without errors or warnings.”</p>
+
+            <p class="answer">Test framework tools (Cucumber, Behat, SpecFlow) and syntaxes like Gherkin (a set of defined grammar rules written in plain English understandable in all areas of a business) make BDD possible.</p>
+
+            <p class="answer">Both TDD and BDD approaches focus on incremental iteration and testing, resulting in higher software quality and fewer defects ahead of a product release or update. Following an update, I could additionally use regression testing to ensure that the code still works after a change.</p>
+
+            <p class="answer">In the specific case of my website’s build, I tested it by ensuring all links (for example, in the nav bar, or the references in the website footer) lead where they were supposed to and that none are broken - still a work in progress! I also sought feedback from the course tutor to get another user experience perspective; I could also have conducted more granular research into how visitors use specific features by using crowd testing sites such as UserTesting.com.[7]</p>
+        </ul>
+    </div>
+ 
+    <footer class="footer">
+        <hr>
+        <ol class="ref-link">
+            <li><a href="https://www.continuoustesting.com/quick-guide-to-test-driven-development-tdd-vs-bdd-vs-atdd/">https://www.continuoustesting.com/quick-guide-to-test-driven-development-tdd-vs-bdd-vs-atdd/</a></li>
+            <li><a href="https://smartbear.com/blog/develop/basics-of-test-driven-development-tdd/">https://smartbear.com/blog/develop/basics-of-test-driven-development-tdd/</a></li>
+            <li><a href="https://smartbear.com/learn/automated-testing/what-is-unit-testing/">https://smartbear.com/learn/automated-testing/what-is-unit-testing/</a></li>
+            <li><a href="https://smartbear.com/product/testleft/features/behavior-driven-development/">https://smartbear.com/product/testleft/features/behavior-driven-development/</a></li>
+            <li><a href="https://cucumber.io/docs/bdd/">https://cucumber.io/docs/bdd/</a></li>
+            <li><a href="https://cucumber.io/docs/gherkin/reference/">https://cucumber.io/docs/gherkin/reference/</a></li>
+            <li><a href="https://smartbear.com/learn/automated-testing/what-is-regression-testing/">https://smartbear.com/learn/automated-testing/what-is-regression-testing/</a></li>
+            <li><a href="https://www.usertesting.com/">https://www.usertesting.com/</a></li>
+        </ol>
+    </footer>
+
+</body>
+</html>

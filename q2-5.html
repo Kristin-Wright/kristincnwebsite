@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kristin's Website - Unit 1 | 2.5</title>/title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <script src="script.js"></script> 
+</head>
+<body>
+    
+<!-- Nav Bar -->    
+<div class="navbar">
+    <div><a href="index.html"><img id="logo" src="kw-logo.png" alt="Logo" width="60px" height="60px"></a></div>
+    <div>
+        <div class="dropdown">
+            Codenation Coursework
+            <div class="dropdown-content">
+                <div class="nav li"><a href="unit1.html">Unit 1</a></div>
+                <div class="nav li"><a href="unit2.html">Unit 2</a></div>
+            </div>
+        </div>
+        <div class="dropdown"><a href="aboutme.html">About Me</a></div>
+        <div class="dropdown"><a href="contact.html">Contact</a></div>
+    </div>   
+</div> 
+
+<!--Question-->
+    <div>
+        <ul>
+            <div><h2>Unit 1, Outcome 1</h2></div>
+            <div class="question">2.5 Review outcomes to make sure they match requirements and are fit for purpose.
+            </div>
+            <br>
+            <br>
+            <br>
+            <div>
+                <a href="cn_unit1_outcomes.pdf" download="CN Unit 1 Outcomes"><img src="cn_thumbnail.png" alt="Unit Outcomes PDF download icon" width="100px"></a>
+            </div>
+            <div class="img caption"><p>Download the Unit Outcomes above</p></div>
+            <br>
+            <p class="answer">In line with the requirements of Unit 2, Outcome 1, I prepared appropriate content for my site by responding to each of the questions posed in the assessment brief. In response to Unit 2, Outcome 2, I created and edited all written content in a Google Doc file saved on Google Drive, then pasting and styling in VS Code. Images and PDFs were collected locally on my Mac computer (running Mac OS Catalina 10.15.4) in the root folder of my site, retrieved via VS Code and imported into the project.
+            </p>
+
+            <p class="answer">For assessment criteria 2.3 - selecting and using appropriate editing and formatting techniques for clarity and good navigation, I referred to No.4 in Jakob Nielsen’s <a href="https://www.nngroup.com/articles/ten-usability-heuristics/">“10 Usability Heuristics for User Interface Design”</a>[1] - “Consistency and Standards” - which states that “Users should not have to wonder whether different words, situations, or actions mean the same thing. Follow platform conventions” and that “consistency is one of the strongest contributors to usability”. In this vein, “A standard ensures that your users can understand the individual interface elements in your design and that they know where to look for what features”.</p>
+
+            <p class="answer">With this in mind, I followed user interface convention and placed my logo in the top left hand corner, linked it back to the homepage (to satisfy heuristic principle No. 3 “User Control and Freedom”, where users should always be given an ‘escape’ or ‘exit’ option) and made sure that the navigation bar was consistently positioned at the top of each page through CSS styling of the .navbar class with ‘position: fixed’. This ensured that the linked logo is always where the user expects to find it.</p>
+
+            <p class="answer">In order to achieve assessment criteria 2.4, I coded relative and absolute links to both internal files and external websites respectively within the HTML and CSS site files. These included creating local links between pages within the website (for example, linking &lt;a href="index.html"&gt; within the logo in the nav bar allows the user to return to the homepage), and also to the CSS stylesheet with a &lt;link rel="stylesheet" type="text/css" href="main.css"&gt; link in the head of each webpage.</p>
+
+            <p class="answer">Google Fonts were in turn imported into the CSS stylesheet with, for example, ‘@import url(https://fonts.googleapis.com/css?family=Open+Sans)’ and external websites can opened in a new tab from a page by the user clicking on a link with the target attribute, such as &lt;a href=”https://www.w3schools.com/html/html_links.asp” target="_blank"&gt;HTML Links.&lt;/a&gt;.</p>
+
+            <p class="answer">In terms of images for 2.5, I selected web-optimised PNGs over JPEGs if a transparent background was required (for example, in the logo) and SVGs (Scalable Vector Graphics) over PNGs if the website needed to be resized responsively to accommodate different screen sizes without pixelation or loss of quality. There was otherwise no need to change file formats to display content correctly.</p>
+
+            <p class="answer">Finally, to demonstrate attainment of assessment criteria 2.6 I tested each page of the website by opening up the preview in the browser to check that visual updates made in VS code displayed correctly, and clicked through each link to ensure that none were broken. Invaluable tutor feedback via screen sharing on Zoom also helped to resolve a few persistent issues with the nav bar styling and global properties inherited from the universal selector.</p>
+
+            Sadly not all the bugs have been squashed yet (the nav bar styling needs further work so that it doesn't overlay the body text when scrolling, and spacing/positioning of the elements on each of the pages desperately needs attention amongst other issues), but I’ll continue to test and seek feedback to make the site the best it can be.
+        </ul>
+    </div>
+ 
+    <footer class="footer">
+        <hr>
+        <ol class="ref-link">
+            <li><a href="https://www.nngroup.com/articles/ten-usability-heuristics/">https://www.nngroup.com/articles/ten-usability-heuristics/</a></li>
+        </ol>
+    </footer>
+
+</body>
+</html>
